@@ -43,7 +43,7 @@ spec:
 项目中的 `role: cluster-storage`目前支持自建nfs 和aliyun_nas 的动态`provisioner`
 
 
-- 2.编辑自定义配置文件：上述命令执行后生成的roles/cluster-storage/defaults/main.yml
+- 1.编辑自定义配置文件：上述命令执行后生成的roles/cluster-storage/defaults/main.yml
 
 ``` bash
 # 比如创建nfs provisioner
@@ -55,7 +55,7 @@ storage:
     storage_class: "class-nfs-01"
     provisioner_name: "nfs-provisioner-01"
 ```
-- 3.创建 nfs provisioner
+- 2.创建 nfs provisioner
 
 ``` bash
 $ ansible-playbook /etc/ansible/roles/cluster-storage/cluster-storage.yml
