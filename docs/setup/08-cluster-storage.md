@@ -42,12 +42,8 @@ spec:
 
 项目中的 `role: cluster-storage`目前支持自建nfs 和aliyun_nas 的动态`provisioner`
 
-- 1.更新项目源码，生成自定义配置文件（该配置文件被.gitignore忽略）
 
-``` bash
-$ ansible-playbook /etc/ansible/tools/init_vars.yml
-```
-- 2.编辑自定义配置文件：上述命令执行后生成的roles/cluster-storage/vars/main.yml
+- 2.编辑自定义配置文件：上述命令执行后生成的roles/cluster-storage/defaults/main.yml
 
 ``` bash
 # 比如创建nfs provisioner
